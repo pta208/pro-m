@@ -68,7 +68,7 @@ const DetailGallery = () => {
   const fileHandler = (e) => {
     setFile(e.target.files);
   };
-  console.log({ file });
+
   return (
     <div className="">
       <div className="flex flex-col gap-2">

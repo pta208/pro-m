@@ -1,7 +1,7 @@
 import useSWR, { mutate } from "swr";
-import { tiktokApi } from "../../api/endpoint";
+import {tiktok} from "../../const"
 export function useGetAlbumVideo() {
-  const { data, error } = useSWR(`album-tiktok-video`, tiktokApi.get);
+  const { data, error } = useSWR(`album-tiktok-video`, ()=> tiktok);
   return {
     videos: data,
     isLoading: !error && !data,

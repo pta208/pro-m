@@ -1003,4 +1003,4 @@ const infos = [
 const newProducts = products.map((product, index) => {
   return { ...product, info: infos[index] };
 });
-console.log(newProducts);
+
