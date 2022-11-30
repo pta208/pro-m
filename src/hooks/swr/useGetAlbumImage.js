@@ -1,11 +1,7 @@
-import axiosClient from "../../api/axiosClient";
 import useSWR, { mutate } from "swr";
-const fetcher = async () => {
-  const resp = await axiosClient.get(`/image`);
-  return resp;
-};
+import { imageApi } from "../../api/endpoint";
 export function useGetAlbumImage() {
-  const { data, error } = useSWR(`album-image`, fetcher);
+  const { data, error } = useSWR(`album-image`, imageApi.get);
 
   return {
     images: data,

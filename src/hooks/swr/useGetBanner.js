@@ -1,11 +1,8 @@
 import axiosClient from "../../api/axiosClient";
 import useSWR, { mutate } from "swr";
-const fetcher = async () => {
-  const resp = await axiosClient.get(`/banner`);
-  return resp;
-};
+import {bannerApi} from "../../api/endpoint"
 export function useGetBanner() {
-  const { data, error } = useSWR(`banner`, fetcher);
+  const { data, error } = useSWR(`banner`, bannerApi.get);
 
   return {
     banners: data,

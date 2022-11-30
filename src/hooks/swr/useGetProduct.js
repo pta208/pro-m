@@ -1,11 +1,8 @@
-import axiosClient from "../../api/axiosClient";
+
 import useSWR, { mutate } from "swr";
-const fetcher = async () => {
-  const resp = await axiosClient.get(`/product`);
-  return resp;
-};
+import {productApi} from "../../api/endpoint"
 export function useGetProduct() {
-  const { data, error } = useSWR(`product`, fetcher);
+  const { data, error } = useSWR(`product`, productApi.get);
   if (error) {
     console.log(error);
   }
