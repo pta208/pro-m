@@ -20,6 +20,7 @@ export const BannerSlider = ({ banners }) => {
             height={9}
             layout="responsive"
             priority={true}
+            quality={100}
           />
         ))}
       </NukaCarousel>

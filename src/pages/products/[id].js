@@ -9,7 +9,6 @@ const ProductIndex = ({}) => {
   const { products } = useGetProduct();
   const { id } = router.query;
   const product = products?.find((product) => product.id == id);
-  console.log(products);
   if (product)
     return (
       <ProductDetail

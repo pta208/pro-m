@@ -10,12 +10,7 @@ export const Header = () => {
       <div className="flex justify-center items-center py-2 max-w-screen-lg mx-auto lg:justify-between">
         <Link href="/">
           <div className="lg:flex-auto cursor-pointer">
-            <Image
-              src="https://admin.bebecook.com/images/common/PC_bebecook_logo.png?ver=20220708"
-              width={300}
-              height={75}
-              layout="fixed"
-            />
+            <Image src="/bvn.png" width={100} height={100} layout="fixed" />
           </div>
         </Link>
         <div className="lg:flex flex-auto items-center gap-8 hidden">

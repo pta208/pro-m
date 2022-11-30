@@ -3,10 +3,10 @@ const Menu = (props) => {
   return (
     <>
       <div
-        className={`sticky top-0 z-50 flex justify-center bg-bebecook gap-4 p-2 ${props.className}`}
+        className={`sticky top-0 z-50 flex justify-center bg-bebecook gap-8 p-2 ${props.className}`}
       >
         {menuItems.map((menuItem, index) => (
-          <Link key={index} href={`/category`}>
+          <Link key={index} href={`${menuItem.link}`}>
             <div
               key={menuItem.slug}
               className="text-white text-xl font-semibold cursor-pointer hover:text-forth"
@@ -23,7 +23,12 @@ const Menu = (props) => {
 export default Menu;
 
 const menuItems = [
-  { slug: "mon-phu", label: "Món phụ", icon: "" },
-  { slug: "gao", label: "Gạo", icon: "" },
-  { slug: "do-an-nhe", label: "Đồ ăn nhẹ", icon: "" },
+  {
+    slug: "bebecook",
+    label: "Bebecook",
+    icon: "",
+    link: "/category/?brand=bebecook",
+  },
+  { slug: "pro-m", label: "Pro-M", icon: "", link: "/category/?brand=pro-m" },
+  { slug: "about-us", label: "Về chúng tôi", icon: "", link: "/about-us" },
 ];
