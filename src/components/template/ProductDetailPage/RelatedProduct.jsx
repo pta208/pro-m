@@ -45,7 +45,7 @@ const RelatedProduct = ({ products, className }) => {
             <ProductCard
               key={product.id}
               title={product.name}
-              imgSrc={product.images[1]}
+              imgSrc={product.images[0]}
               href={`/products/${product.id}`}
               className="p-1 lg:p-4 min-h-[320px] max-h-[320px]"
               titlePlacement="bottom"

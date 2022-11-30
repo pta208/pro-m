@@ -5,7 +5,7 @@ export const FavoriteProducts = ({ products, className }) => {
   return (
     <div className={`flex flex-col font-bold gap-2 ${className}`}>
       <div className="text-center text-3xl font-bold text-blaze-orange-500">
-        Bebecook's Best Seller
+        Best Seller
       </div>
       <div className="w-full gap-4 lg:flex-row">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
@@ -13,7 +13,7 @@ export const FavoriteProducts = ({ products, className }) => {
             <ProductCard
               key={product.id}
               title={product.name}
-              imgSrc={product.images[1]}
+              imgSrc={product.images[0]}
               href={`products/${product.id}`}
               className="p-1 lg:p-4"
               titlePlacement="top"

@@ -10,7 +10,7 @@ const ProductTable = ({ products }) => {
       dataIndex: "images",
       key: "images",
       render: (images) => {
-        return <Image src={images[1]} height="100px" width="100px" />;
+        return <Image src={images[0]} height="100px" width="100px" />;
       },
       width: "120px",
     },

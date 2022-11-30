@@ -22,9 +22,9 @@ export const ProductCard = ({
             )}
             <div className="w-full">
               <Image
+                layout="responsive"
                 width={1}
                 height={1}
-                layout="responsive"
                 src={imgSrc}
                 className="object-contain"
               />

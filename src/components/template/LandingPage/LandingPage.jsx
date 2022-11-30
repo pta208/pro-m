@@ -15,8 +15,8 @@ export const LandingPage = ({ products, images, videos }) => {
         className="mt-8 mb-8 lg:mb-12"
       />
       <ProductSlideCarousel products={products} />
-      <Media title="Baby's moment" images={images} videos={videos} />
-      <Partner />
+      {/* <Media title="Baby's moment" images={images} videos={videos} /> */}
+      {/* <Partner /> */}
     </main>
   );
 };

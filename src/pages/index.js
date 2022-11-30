@@ -9,5 +9,6 @@ export default function Home() {
   const { products } = useGetProduct();
   const { images } = useGetAlbumImage();
   const { videos } = useGetAlbumVideo();
+  console.log(products);
   return <LandingPage products={products} images={images} videos={videos} />;
 }

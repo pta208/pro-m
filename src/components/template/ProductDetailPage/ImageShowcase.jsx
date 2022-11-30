@@ -8,7 +8,7 @@ const ImageShowcase = ({ images }) => {
   const [currentImage, setCurrentImage] = useState("");
   useEffect(() => {
     const setFirstImage = () => {
-      setCurrentImage(images[1]);
+      setCurrentImage(images[0]);
     };
     setFirstImage();
   }, [images]);
