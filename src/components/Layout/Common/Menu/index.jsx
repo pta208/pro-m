@@ -1,9 +1,14 @@
 import Link from "next/link";
+import { useMouseWheel } from "react-use";
 const Menu = ({ className }) => {
+  const mouseWheel = useMouseWheel();
+  console.log(mouseWheel);
   return (
     <>
       <div
-        className={`sticky top-0 z-50 flex justify-center bg-bebecook gap-8 p-2 ${className}`}
+        className={`sticky top-0 z-50 flex justify-center bg-blaze-orange-600 gap-8 p-2 transition-colors ease-in-out ${className} ${
+          mouseWheel > -1 ? "bg-blaze-orange-200" : ""
+        }`}
       >
         {menuItems.map((menuItem, index) => (
           <Link key={index} href={`${menuItem.link}`}>

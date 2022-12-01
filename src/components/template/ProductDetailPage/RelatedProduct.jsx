@@ -2,7 +2,7 @@ import React from "react";
 
 import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
 import NukaCarousel from "nuka-carousel";
-import { ProductCard, ProductRow } from "../../Product";
+import { ProductRow } from "../../Product";
 import _ from "lodash";
 import { useMedia } from "react-use";
 const RelatedProduct = ({ products, className }) => {
