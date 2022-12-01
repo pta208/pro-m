@@ -8,6 +8,7 @@ import "react-quill/dist/quill.bubble.css";
 import "@fontsource/source-serif-pro";
 import { LandingPageLayout } from "../components/Layout/LandingPageLayout";
 import { GoogleAnalyticProvider } from "../lib/google-analytic";
+import { Meta } from "../components/Layout/Common/Meta";
 const theme = extendTheme({
   fonts: {
     heading: `'Source Serif Pro', sans-serif`,
@@ -17,8 +18,10 @@ const theme = extendTheme({
 
 function MyApp({ Component, pageProps }) {
   const Layout = Component.Layout ? Component.Layout : LandingPageLayout;
+  const title = Component.title;
   return (
     <ChakraProvider theme={theme}>
+      <Meta title={title && title} />
       <GoogleAnalyticProvider>
         <Layout>
           <Component {...pageProps} />

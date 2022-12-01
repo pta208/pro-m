@@ -22,7 +22,7 @@ export const Header = () => {
               <Image
                 src="/bebecook.png"
                 width={300}
-                height={100}
+                height={150}
                 layout="fixed"
                 className="cursor-pointer"
                 quality={100}
