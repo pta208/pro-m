@@ -7,7 +7,7 @@ const Menu = ({ className }) => {
     <>
       <div
         className={`sticky top-0 z-50 flex justify-center bg-blaze-orange-600 gap-8 p-2 transition-colors ease-in-out ${className} ${
-          mouseWheel > -1 ? "bg-blaze-orange-200" : ""
+          mouseWheel > -1 ? "bg-blaze-orange-400" : ""
         }`}
       >
         {menuItems.map((menuItem, index) => (
