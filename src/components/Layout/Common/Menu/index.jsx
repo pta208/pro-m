@@ -2,7 +2,6 @@ import Link from "next/link";
 import { useMouseWheel } from "react-use";
 const Menu = ({ className }) => {
   const mouseWheel = useMouseWheel();
-  console.log(mouseWheel);
   return (
     <>
       <div

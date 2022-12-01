@@ -7,6 +7,7 @@ import "react-quill/dist/quill.core.css";
 import "react-quill/dist/quill.bubble.css";
 import "@fontsource/source-serif-pro";
 import { LandingPageLayout } from "../components/Layout/LandingPageLayout";
+import { GoogleAnalyticProvider } from "../lib/google-analytic";
 const theme = extendTheme({
   fonts: {
     heading: `'Source Serif Pro', sans-serif`,
@@ -18,9 +19,11 @@ function MyApp({ Component, pageProps }) {
   const Layout = Component.Layout ? Component.Layout : LandingPageLayout;
   return (
     <ChakraProvider theme={theme}>
-      <Layout>
-        <Component {...pageProps} />
-      </Layout>
+      <GoogleAnalyticProvider>
+        <Layout>
+          <Component {...pageProps} />
+        </Layout>
+      </GoogleAnalyticProvider>
     </ChakraProvider>
   );
 }
