@@ -1,9 +1,9 @@
 import Link from "next/link";
-const Menu = (props) => {
+const Menu = ({ className }) => {
   return (
     <>
       <div
-        className={`sticky top-0 z-50 flex justify-center bg-bebecook gap-8 p-2 ${props.className}`}
+        className={`sticky top-0 z-50 flex justify-center bg-bebecook gap-8 p-2 ${className}`}
       >
         {menuItems.map((menuItem, index) => (
           <Link key={index} href={`${menuItem.link}`}>

@@ -2,8 +2,13 @@ import React from "react";
 
 import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
 import NukaCarousel from "nuka-carousel";
-import { ProductCard } from "../../Product";
+import { ProductCard, ProductRow } from "../../Product";
+import _ from "lodash";
+import { useMedia } from "react-use";
 const RelatedProduct = ({ products, className }) => {
+  const isWide = useMedia("(min-width: 480px)");
+  const newProducts = _.chunk(products, isWide ? 4 : 2);
+
   return (
     <div
       className={`flex flex-col gap-4 py-4 w-full max-w-screen-xl overflow-x-hidden ${className}`}
@@ -38,18 +43,10 @@ const RelatedProduct = ({ products, className }) => {
               <FaArrowRight />
             </button>
           )}
-          slidesToShow={5}
-          cellSpacing={30}
+          slidesToShow={1}
         >
-          {products.map((product) => (
-            <ProductCard
-              key={product.id}
-              title={product.name}
-              imgSrc={product.images[0]}
-              href={`/products/${product.id}`}
-              className="p-1 lg:p-4 min-h-[320px] max-h-[320px]"
-              titlePlacement="bottom"
-            />
+          {newProducts.map((products) => (
+            <ProductRow products={products} />
           ))}
         </NukaCarousel>
       </div>

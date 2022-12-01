@@ -13,21 +13,23 @@ export const Header = () => {
                 height={100}
                 layout="fixed"
                 className="cursor-pointer"
+                quality={100}
               />
             </Link>
           </div>
-          <div>
+          <div className="hidden md:block">
             <Link href="/">
               <Image
                 src="/bebecook.png"
-                width={200}
-                height={75}
+                width={300}
+                height={100}
                 layout="fixed"
                 className="cursor-pointer"
+                quality={100}
               />
             </Link>
           </div>
-          <div>
+          <div className="hidden md:block">
             <Link href="/">
               <Image
                 src="/pro-m.jpg"
@@ -35,6 +37,7 @@ export const Header = () => {
                 height={100}
                 layout="fixed"
                 className="cursor-pointer"
+                quality={100}
               />
             </Link>
           </div>

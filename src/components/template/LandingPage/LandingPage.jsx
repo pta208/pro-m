@@ -7,14 +7,16 @@ import { Partner } from "./Partner";
 export const LandingPage = ({ products, images, videos }) => {
   return (
     <main
-      className="flex flex-col gap-4 lg:gap-12 "
+      className="flex flex-col gap-4 lg:gap-12 px-4 lg:px-8"
       style={{ minHeight: "100vh" }}
     >
       <FavoriteProducts
         products={products?.slice(0, 4)}
         className="mt-8 mb-8 lg:mb-12"
       />
+
       <ProductSlideCarousel products={products} />
+
       <Media title="Baby's moment" images={images} videos={videos} />
       <Partner />
     </main>
