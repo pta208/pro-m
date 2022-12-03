@@ -70,30 +70,30 @@ module.exports = {
       },
     },
   },
-  daisyui: {
-    themes: [
-      {
-        mytheme: {
-          primary: "rgb(154, 220, 255)",
+  // daisyui: {
+  //   themes: [
+  //     {
+  //       mytheme: {
+  //         primary: "rgb(154, 220, 255)",
 
-          secondary: "rgb(255, 248, 154)",
+  //         secondary: "rgb(255, 248, 154)",
 
-          accent: "rgb(255, 178, 166)",
+  //         accent: "rgb(255, 178, 166)",
 
-          neutral: "rgb(255, 138, 174)",
+  //         neutral: "rgb(255, 138, 174)",
 
-          "base-100": "#E6E3E8",
+  //         "base-100": "#E6E3E8",
 
-          info: "#657EE2",
+  //         info: "#657EE2",
 
-          success: "#22c55e",
+  //         success: "#22c55e",
 
-          warning: "#eab308",
+  //         warning: "#eab308",
 
-          error: "#b91c1c",
-        },
-      },
-    ],
-  },
-  plugins: [require("daisyui"), require("tailwind-scrollbar")],
+  //         error: "#b91c1c",
+  //       },
+  //     },
+  //   ],
+  // },
+  plugins: [require("tailwind-scrollbar")],
 };

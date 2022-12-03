@@ -3,7 +3,7 @@ import {
   useGetAlbumVideo,
   useGetProduct,
 } from "../hooks/swr";
-import { LandingPage } from "../components/template/LandingPage/LandingPage";
+import { LandingPage } from "../components/LandingPage/template/LandingPage";
 
 export default function Home() {
   const { products } = useGetProduct();

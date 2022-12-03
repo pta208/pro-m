@@ -1,8 +1,8 @@
 import { Button, Input } from "@chakra-ui/react";
 import React from "react";
 import ProductTable from "./ProductTable";
-import { products } from "../../../const";
-const DashboardProductListPage = () => {
+
+const DashboardProductListPage = ({ products }) => {
   return (
     <div className="card bg-white p-4">
       <div className="flex flex-col gap-4">

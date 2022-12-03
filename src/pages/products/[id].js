@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import { ProductPageLayout } from "../../components/Layout/ProductPageLayout";
+import { ProductPageLayout } from "../../components/LandingPage/Layout/ProductPageLayout";
 import { useRouter } from "next/router";
 
 import { useGetProduct } from "../../hooks/swr";
-import { ProductDetail } from "../../components/template/ProductDetailPage";
+import { ProductDetail } from "../../components/LandingPage/template/ProductDetailPage";
 const ProductIndex = ({}) => {
   const router = useRouter();
   const { products } = useGetProduct();

@@ -1,10 +1,12 @@
 import React from "react";
 import DashboardLayout from "../../components/Dashboard/Layout/index";
 import DashboardProductListPage from "../../components/Dashboard/Product/ProductListPage";
+import { useGetProduct } from "../../hooks/swr";
 const AdminDashboardPage = () => {
+  const { products } = useGetProduct();
   return (
     <div className="card bg-white p-4">
-      <DashboardProductListPage />
+      <DashboardProductListPage products={products} />
     </div>
   );
 };

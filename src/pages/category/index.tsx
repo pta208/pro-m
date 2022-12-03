@@ -1,8 +1,8 @@
 import { useRouter } from "next/router";
 import React from "react";
 
-import { ProductPageLayout } from "../../components/Layout/ProductPageLayout";
-import { CategoryPage } from "../../components/template/CategoryPage";
+import { ProductPageLayout } from "../../components/LandingPage/Layout/ProductPageLayout";
+import { CategoryPage } from "../../components/LandingPage/template/CategoryPage";
 import { useGetProduct } from "../../hooks/swr/useGetProduct";
 const Category = () => {
   const router = useRouter();

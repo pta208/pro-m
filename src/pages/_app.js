@@ -2,13 +2,11 @@ import "antd/dist/reset.css";
 import "../styles/globals.css";
 import { extendTheme } from "@chakra-ui/react";
 import { ChakraProvider } from "@chakra-ui/react";
-import "react-quill/dist/quill.snow.css";
-import "react-quill/dist/quill.core.css";
-import "react-quill/dist/quill.bubble.css";
+
 import "@fontsource/source-serif-pro";
-import { LandingPageLayout } from "../components/Layout/LandingPageLayout";
+import { LandingPageLayout } from "../components/LandingPage/Layout/LandingPageLayout";
 import { GoogleAnalyticProvider } from "../lib/google-analytic";
-import { Meta } from "../components/Layout/Common/Meta";
+import { Meta } from "../components/SEO";
 const theme = extendTheme({
   fonts: {
     heading: `'Source Serif Pro', sans-serif`,
