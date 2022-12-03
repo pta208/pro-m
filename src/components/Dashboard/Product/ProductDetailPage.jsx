@@ -3,7 +3,6 @@ import { Input, Select } from "@chakra-ui/react";
 import dynamic from "next/dynamic";
 import { useState } from "react";
 import { useRef } from "react";
-import Uploader from "../../Common/Uploader";
 const ProductDetailPage = () => {
   return (
     <div className="grid grid-cols-12 gap-4 flex-1">
