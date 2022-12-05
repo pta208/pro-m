@@ -1,12 +1,12 @@
 import Link from "next/link";
-import { useMouseWheel } from "react-use";
+import { useWindowScroll } from "react-use";
 const Menu = ({ className }) => {
-  const mouseWheel = useMouseWheel();
+  const { x, y } = useWindowScroll();
   return (
     <>
       <div
         className={`sticky top-0 z-50 flex justify-center bg-blaze-orange-600 gap-8 p-2 transition-colors ease-in-out ${className} ${
-          mouseWheel > -1 ? "bg-blaze-orange-400" : ""
+          y > 100 ? "bg-blaze-orange-400" : ""
         }`}
       >
         {menuItems.map((menuItem, index) => (

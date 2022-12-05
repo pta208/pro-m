@@ -1,5 +1,5 @@
 import React from "react";
-import DashboardLayout from "../../components/Dashboard/Layout/index";
+import { DashboardLayout } from "../../components/Dashboard/Layout";
 import DashboardProductListPage from "../../components/Dashboard/Product/ProductListPage";
 import { useGetProduct } from "../../hooks/swr";
 const AdminDashboardPage = () => {

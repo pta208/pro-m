@@ -1,9 +1,9 @@
 import { Divider } from "@chakra-ui/react";
 import React from "react";
 import DashboardHeader from "./Header";
-import DashboardSideBar from "./Sidebar";
+import DashboardSideBar from "./Sidebar/Sidebar";
 
-const DashboardLayout = ({ children }) => {
+export const DashboardLayout = ({ children }) => {
   return (
     <div className="min-h-screen flex bg-slate-100">
       {/* Sidebar */}
@@ -17,10 +17,8 @@ const DashboardLayout = ({ children }) => {
           role="Admin"
         />
         <Divider />
-        <div className="p-4 flex-1">{children}</div>
+        <div className="p-4 flex-1 bg-white">{children}</div>
       </div>
     </div>
   );
 };
-
-export default DashboardLayout;

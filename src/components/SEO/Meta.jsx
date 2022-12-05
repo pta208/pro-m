@@ -7,7 +7,7 @@ export const Meta = ({ title }) => {
       <meta property="og:title" content="BVN Distribution" key="title" />
       <meta property="og:url" content="https://phanphoibvn.vn/" />
       <meta property="og:type" content="website" />
-      <title>{title || "BVN Distribution"}</title>
+      <title>{`${title ? title + " - BVN Distribution" : "BVN Distribution"}`}</title>
     </Head>
   );
 };

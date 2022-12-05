@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 import DashboardMenu from "../Menu";
 const DashboardSideBar = ({ className }) => {
   return (
@@ -12,8 +11,8 @@ const DashboardSideBar = ({ className }) => {
         height={80}
         layout="intrinsic"
       /> */}
-      <div className="flex justify-center items-center text-3xl text-center text-bold min-h-16 mb-8">
-        LOGO
+      <div className="grid place-items-center text-3xl text-center text-bold h-[75px]">
+        <div>LOGO</div>
       </div>
       <div className="flex flex-1 flex-col ">
         <DashboardMenu />

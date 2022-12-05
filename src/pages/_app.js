@@ -16,7 +16,7 @@ const theme = extendTheme({
 
 function MyApp({ Component, pageProps }) {
   const Layout = Component.Layout ? Component.Layout : LandingPageLayout;
-  const title = Component.title;
+  const title = Component.Title;
   return (
     <ChakraProvider theme={theme}>
       <Meta title={title && title} />

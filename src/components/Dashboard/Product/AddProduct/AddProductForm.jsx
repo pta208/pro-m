@@ -47,7 +47,7 @@ export const AddProductForm = () => {
       </FormControl>
 
       <FormControl>
-        <FormLabel>Ảnh sản phẩm:</FormLabel>
+        <FormLabel>Ảnh sản phẩm: (Ảnh đầu là thumbnail)</FormLabel>
         <ImageInput
           register={{ ...register("images") }}
           setValue={setValue}
