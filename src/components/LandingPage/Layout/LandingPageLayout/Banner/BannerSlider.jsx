@@ -13,24 +13,14 @@ export const BannerSlider = ({ banners }) => {
         withoutControls={true}
       >
         {banners?.map((banner, index) => (
-          // <Image
-          //   key={index}
-          //   src={banner.url}
-          //   width={21}
-          //   height={9}
-          //   layout="responsive"
-          //   priority={true}
-          //   quality={100}
-          // />
-          <img
+          <Image
             key={index}
             src={banner.url}
-            loading="eager"
-            // width={21}
-            // height={9}
-            // layout="responsive"
-            // priority={true}
-            // quality={100}
+            width={21}
+            height={9}
+            layout="responsive"
+            priority={true}
+            quality={100}
           />
         ))}
       </NukaCarousel>

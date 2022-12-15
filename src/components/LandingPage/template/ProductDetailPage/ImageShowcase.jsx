@@ -34,14 +34,13 @@ const SmallImageItem = (props) => {
   const imgSrc = props.imgSrc;
   return (
     <div onClick={() => props.onClick()}>
-      {/* <Image
+      <Image
         src={imgSrc}
         width={100}
         height={100}
         layout="fixed"
         onClick={() => props.onClick()}
-      /> */}
-      <img src={imgSrc} onClick={() => props.onClick()} loading="lazy" />
+      />
     </div>
   );
 };
