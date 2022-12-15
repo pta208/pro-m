@@ -21,13 +21,14 @@ export const ProductCard = ({
               </div>
             )}
             <div className="w-full">
-              <Image
+              {/* <Image
                 layout="responsive"
                 width={1}
                 height={1}
                 src={imgSrc}
                 className="object-contain"
-              />
+              /> */}
+              <img src={imgSrc} className="object-contain" loading="lazy" />
             </div>
             {titlePlacement === "bottom" && (
               <div className="font-bold text-lg text-center">{title}</div>
