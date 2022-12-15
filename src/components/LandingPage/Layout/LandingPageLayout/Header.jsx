@@ -21,8 +21,8 @@ export const Header = () => {
             <Link href="/">
               <Image
                 src="/bebecook.png"
-                width={300}
-                height={150}
+                width={270}
+                height={135}
                 layout="fixed"
                 className="cursor-pointer"
                 quality={100}

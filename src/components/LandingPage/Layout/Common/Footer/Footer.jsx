@@ -73,7 +73,7 @@ export const Footer = () => {
         </ContactItem>
         <ContactItem title="Fanpage" className="w-full " key={4}>
           <iframe
-            src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FBebecookvietnam&tabs&width=340&height=130&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId=1326553517365456"
+            src="https://www.facebook.com/plugins/page.php?href=https://www.facebook.com/ProMVietNam&tabs&width=340&height=130&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId=1326553517365456"
             // width="340"
             // height="130"
             style={{ border: "none", overflow: "hidden" }}
