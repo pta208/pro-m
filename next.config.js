@@ -3,12 +3,7 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   images: {
-    domains: [
-      "admin.bebecook.com",
-      "bebecook.vn",
-      "hibabi.vn",
-      "cloudinary.com",
-    ],
+    domains: ["admin.bebecook.com", "bebecook.vn", "hibabi.vn"],
   },
   env: {
     RAPID_API_HOST: process.env.RAPID_API_HOST,
