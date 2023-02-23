@@ -8,7 +8,7 @@ export const ProductRow = ({ products }) => {
         <ProductCard
           key={product.id}
           title={product.name}
-          imgSrc={product.images[0] || product.images[1]}
+          imgSrc={product.images[0]}
           href={`/products/${product.id}`}
           className="flex-1"
           // className="p-1 lg:p-4 min-h-[320px] max-h-[320px] min-w-[320px] max-w-[320px]"
