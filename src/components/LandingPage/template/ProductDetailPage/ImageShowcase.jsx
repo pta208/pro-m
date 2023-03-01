@@ -12,18 +12,17 @@ const ImageShowcase = ({ images }) => {
     };
     setFirstImage();
   }, [images]);
-
   return (
     <>
       <div className="rounded-lg overflow-hidden object-contain">
-        <InnerImageZoom src={currentImage} className="aspect-square" />
+        <InnerImageZoom src={currentImage.url} className="aspect-square" />
       </div>
       <div className="flex border-t border-t-bebecook  w-full max-w-xl overflow-x-auto scrollbar-thin scrollbar-thumb-forth scrollbar-track-gray-100">
         {images.map((image, index) => (
           <SmallImageItem
             onClick={() => setCurrentImage(image)}
             key={index}
-            imgSrc={image}
+            imgSrc={image.url}
           />
         ))}
       </div>

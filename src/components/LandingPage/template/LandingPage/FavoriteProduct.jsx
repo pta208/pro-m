@@ -13,7 +13,7 @@ export const FavoriteProducts = ({ products, className }) => {
             <ProductCard
               key={product.id}
               title={product.name}
-              imgSrc={product.images[0]}
+              imgSrc={product.medias[0].url}
               href={`products/${product.id}`}
               className="p-1 lg:p-4"
               titlePlacement="top"

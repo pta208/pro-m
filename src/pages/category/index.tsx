@@ -9,9 +9,12 @@ const Category = () => {
   const {
     query: { brand },
   } = router;
+  console.log(brand);
   // const { brand } = query;
   const { products: baseProduct } = useGetProduct();
-  const newProduct = baseProduct?.filter((product) => product.brand == brand);
+  const newProduct = baseProduct?.filter(
+    (product) => product.category.slug == brand
+  );
   if (baseProduct) return <CategoryPage products={newProduct} brand={brand} />;
   else return <></>;
 };

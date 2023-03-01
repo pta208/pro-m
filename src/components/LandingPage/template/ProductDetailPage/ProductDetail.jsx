@@ -3,18 +3,18 @@ import ImageShowcase from "./ImageShowcase";
 import RelatedProduct from "./RelatedProduct";
 import parse from "html-react-parser";
 export const ProductDetail = ({ product, relatedProducts }) => {
-  const { name, images, attributes, description, info } = product;
+  const { name, medias, attributes, longDesc, shortDesc } = product;
   const html = `
-  ${info}
+  ${longDesc}
   `;
-
+  console.log(product);
   return (
     <div className={`flex flex-col gap-4 max-w-screen-xl p-4 mx-auto `}>
       {/* <div>Trang chủ / Bánh Bỏng bổ sung lợi khuẩn cho bé vị Dâu</div> */}
       <div className="flex flex-wrap gap-4">
         {/* Ảnh */}
         <div className="w-full lg:flex-1">
-          <ImageShowcase images={images} />
+          <ImageShowcase images={medias} />
         </div>
         {/* Thông tin sp */}
         <div className="w-full flex flex-col gap-8 lg:flex-1 p-4 lg:p-0">
@@ -28,7 +28,7 @@ export const ProductDetail = ({ product, relatedProducts }) => {
               return (
                 <>
                   <div className="flex items-center">
-                    <div className="font-semibold w-32 ">{attribute.label}</div>
+                    <div className="font-semibold w-32 ">{attribute.name}</div>
                     <div className="flex-1">{attribute.value}</div>
                   </div>
 
@@ -40,7 +40,7 @@ export const ProductDetail = ({ product, relatedProducts }) => {
             })}
           </div>
 
-          <div className="text-pink-500">{description}</div>
+          <div className="text-pink-500">{shortDesc}</div>
         </div>
       </div>
       {/* Mô tả */}

@@ -1,7 +1,7 @@
-import axiosClient from "../axiosClient"
-export const bannerApi  = {
-    get: async () => {
-        const url = "/banner"
-        return await axiosClient.get(url)
-    }
-}
+import axiosClient from "../axiosClient";
+const url = "/banner";
+export const bannerApi = {
+  get: async () => {
+    return await axiosClient.get(url);
+  },
+};
