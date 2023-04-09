@@ -40,7 +40,7 @@ export const Footer = () => {
           <div className="flex gap-5 ">
             <div className="font-semibold text-sm w-24">Email liên hệ:</div>
             <div className="text-gray-600 text-sm flex-1">
-              bebecookvn@gmail.com
+              phanphoibvn@gmail.com
             </div>
           </div>
           <div className="flex gap-5 ">
