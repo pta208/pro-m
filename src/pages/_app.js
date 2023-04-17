@@ -2,7 +2,7 @@ import "antd/dist/reset.css";
 import "../styles/globals.css";
 import { extendTheme } from "@chakra-ui/react";
 import { ChakraProvider } from "@chakra-ui/react";
-
+import { useEffect } from "react";
 import "@fontsource/source-serif-pro";
 import { LandingPageLayout } from "../components/LandingPage/Layout/LandingPageLayout";
 import { GoogleAnalyticProvider } from "../lib/google-analytic";
