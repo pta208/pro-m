@@ -20,18 +20,6 @@ export const Header = () => {
           <div className="hidden md:block">
             <Link href="/">
               <Image
-                src="/bebecook.png"
-                width={270}
-                height={135}
-                layout="fixed"
-                className="cursor-pointer"
-                quality={100}
-              />
-            </Link>
-          </div>
-          <div className="hidden md:block">
-            <Link href="/">
-              <Image
                 src="/pro-m.jpg"
                 width={100}
                 height={100}

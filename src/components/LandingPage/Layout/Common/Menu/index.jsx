@@ -27,12 +27,12 @@ const Menu = ({ className }) => {
 export default Menu;
 
 const menuItems = [
-  {
-    slug: "bebecook",
-    label: "Bebecook",
-    icon: "",
-    link: "/category/?brand=bebecook",
-  },
+  // {
+  //   slug: "bebecook",
+  //   label: "Bebecook",
+  //   icon: "",
+  //   link: "/category/?brand=bebecook",
+  // },
   { slug: "pro-m", label: "Pro-M", icon: "", link: "/category/?brand=pro-m" },
   { slug: "about-us", label: "Về chúng tôi", icon: "", link: "/about-us" },
 ];
