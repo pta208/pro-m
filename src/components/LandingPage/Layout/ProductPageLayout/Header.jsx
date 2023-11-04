@@ -27,7 +27,7 @@ export const Header = () => {
               <FaEnvelope />
             </div>
             <div>
-              <a href="bebecookvn@gmail.com">bebecookvn@gmail.com</a>
+              <a href="mailto:phanphoibvn@gmail.com">phanphoibvn@gmail.com</a>
             </div>
           </div>
         </div>
